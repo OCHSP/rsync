@@ -47,7 +47,7 @@ env:
 jobs:
   windows-iocp-stress:
     name: Windows IOCP stress (high-IOPS)
-    runs-on: windows-latest
+    runs-on: blacksmith-4vcpu-windows-2025
     timeout-minutes: 45
 
     steps:

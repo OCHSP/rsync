@@ -36,7 +36,7 @@ env:
 jobs:
   smoke:
     name: fuzz coverage smoke
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 60
 
     steps:

@@ -69,7 +69,7 @@ permissions:
 jobs:
   benchmark-windows:
     name: throughput vs MSYS2 rsync (Windows, best-effort)
-    runs-on: windows-latest
+    runs-on: blacksmith-4vcpu-windows-2025
     timeout-minutes: ${{ inputs.timeout_minutes || 60 }}
     # Best-effort: wall-clock variance on hosted Windows runners makes
     # this a poor merge-gate. Treat the numbers as a regression sniff.

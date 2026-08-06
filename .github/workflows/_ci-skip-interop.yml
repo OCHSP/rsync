@@ -9,6 +9,6 @@ permissions:
 jobs:
   interop-with-upstream:
     name: interop with upstream rsync
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
       - run: echo "Skipped — no code changes"

@@ -26,7 +26,7 @@ permissions:
 jobs:
   interop:
     name: interop with upstream rsync
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: ${{ inputs.timeout_minutes }}
 
     env:

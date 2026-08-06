@@ -24,7 +24,7 @@ env:
 jobs:
   criterion:
     name: Criterion (${{ matrix.crate }})
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     # Each matrix cell builds the workspace once on a cold cache (~10-15 min)
     # and runs one crate's benches. The 7 cells fan out in parallel,
     # replacing the previous serial 60-90 min `cargo bench --workspace` run.
@@ -64,7 +64,7 @@ jobs:
     name: Publish criterion summary
     needs: criterion
     if: always() && needs.criterion.result != 'cancelled'
-    runs-on: ubuntu-24.04
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30
     steps:
       - name: Download all criterion artifacts

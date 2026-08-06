@@ -41,7 +41,7 @@ env:
 jobs:
   bench-daemon-coldstart:
     name: Daemon cold-start regression
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30
     # Non-required: DIS-8.b will promote this check after a bake-in
     # period on master. Do not add to branch protection here.

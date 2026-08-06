@@ -37,7 +37,7 @@ env:
 jobs:
   bench-checksum-throughput:
     name: Checksum throughput regression
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30
     # Non-required: advisory bench cell. Do not add to branch protection.
     continue-on-error: true

@@ -51,7 +51,7 @@ permissions:
 jobs:
   interop-macos:
     name: interop with upstream rsync (macOS)
-    runs-on: macos-latest
+    runs-on: blacksmith-6vcpu-macos-15
     timeout-minutes: ${{ inputs.timeout_minutes }}
 
     env:

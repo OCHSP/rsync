@@ -28,7 +28,7 @@ permissions:
 jobs:
   benchmark-macos:
     name: throughput vs upstream rsync 3.4.4 (macOS, best-effort)
-    runs-on: macos-15
+    runs-on: blacksmith-6vcpu-macos-15
     timeout-minutes: ${{ inputs.timeout_minutes || 90 }}
     continue-on-error: true
 
